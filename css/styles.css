@@ -221,7 +221,11 @@ img {display: block;}
 /*section3*/
 .team {
     padding: 120px 0;
-    background-color: #F4F4FD;}
+    background-color: #F4F4FD;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .team-title,
 .portfolio-title {
@@ -261,8 +265,7 @@ img {display: block;}
 .social-item {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    }
 
 .social-link {
     width: 100%;
@@ -272,6 +275,7 @@ img {display: block;}
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .social-icon {
@@ -304,7 +308,6 @@ img {display: block;}
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
-        transform: translateY(0%);
 }
 
 .portfolio-image {
@@ -327,6 +330,10 @@ img {display: block;}
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-image-text:hover {
+    transform: translateY(0%);
+}
+
 .portfolio-box {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -337,6 +344,19 @@ img {display: block;}
 .page-footer {
     padding: 100px 0;
     background-color: #2e2f42;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.container.footer-logo {
+    margin-left: 0;
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -346,9 +366,28 @@ img {display: block;}
 
 .footer-logo > .logo-part {color: #f4f4fd}
 
-.footer-text {
+.footer-logo-text {
     max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+}
+
+.footer-social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer.social-link:hover,
+.footer.social-link:focus {
+    background-color: #31d0aa;
 }
