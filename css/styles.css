@@ -315,7 +315,7 @@ img {display: block;}
     overflow: hidden;
 }
 
-.portfolio-image-text {
+.overlay {
     position: absolute;
     top: 0;
     font-size: 16px;
@@ -330,7 +330,7 @@ img {display: block;}
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-image-text:hover {
+.portfolio-image:hover .overlay {
     transform: translateY(0%);
 }
 
@@ -355,8 +355,8 @@ img {display: block;}
 }
 
 .container.footer-logo {
-    margin-left: 0;
-    margin-right: 120px;
+   margin-right: 120px;
+   margin-left: 0;
 }
 
 .footer-logo {
